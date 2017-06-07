@@ -1,0 +1,98 @@
+<!-- 
+-Autores: Dubier perez / jeison salgado
+-->
+
+
+<html>
+        <head>
+			<title>juego javascript</title>
+			<meta charset="utf-8" />
+            <script src="css/bootstrap/js/jquerymin.js"></script>
+			<script src="css/bootstrap/js/bootstrap.min.js"></script>
+			<link rel="stylesheet" type="text/css" href="css/bootstrap/css/bootstrap.css">
+
+        	<script src="js/juego.js"></script>
+        
+		
+		
+
+		</head>
+		<body>
+			<center>
+	                   
+	                <div class="modal full screen-modal fade" id="myModal" role="dialog">
+	                    <div class="modal-dialog modal-lg">
+	                    
+	                      <!-- Modal content-->
+		                    <div class="modal-content">
+		                        <div class="modal-header">
+			                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+			                          <h2><b><div id="pregunta"> x</div></b></h2>
+			                    </div>
+
+		                        	
+		                            <div class="modal-body">
+		                            	
+		                            	    <input type="hidden" id="num_array">
+
+				                            <div class="well well-sm" id="a" onclick="respuestas(this.id);"> a </div>
+				                            <br>
+				                            <br>
+											<div class="well well-sm" id="b" onclick="respuestas(this.id);">b</div>
+											<br>
+											<br>
+											<div class="well well-sm" id="c" onclick="respuestas(this.id);">c</div>
+											<br>
+											<br>
+		                            </div>
+		                        	<div class="modal-footer">
+		                                <button type="button" class="close" data-dismiss="modal">&times;Cerrar</button>
+		                         	</div>
+		                    </div>
+	                    </div>
+	                </div>
+	  
+	        </center>
+			
+
+			 				<div class="modal full screen-modal fade" id="myModal1" role="dialog">
+				                    <div class="modal-dialog">
+				                    
+					                      <!-- Modal content-->
+					                    <div class="modal-content">
+					                        <div class="modal-header">
+						                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+						                          <h2><div><b>RESULTADOS</b></div></h2>
+					                        </div>
+					                        <div class="modal-body">
+					                        	<input type="hidden" id="num_array">
+											    <div class="panel panel-info" id="correc" onclick="respuestas(this.id);"></div>
+												<br>
+												<br>
+												<div class="panel panel-info" id="incorrec" onclick="respuestas(this.id);"></div>
+												<br>
+												<br>
+												<div class="panel panel-info" id="num_pre" class="" onclick="respuestas(this.id);"></div>
+						                        <br>
+						                        <br>											
+					                        </div>
+					                        <div class="modal-footer">
+					                          <button type="button" class="close" data-dismiss="modal">&times;Cerrar</button>
+					                        </div>
+					                    </div>
+				                      
+				                    </div>
+		                    </div>
+
+			
+					<div style="width: 950px;  border-style: none; overflow: none; " id="contenedor_frutas">
+							
+					</div>
+
+			 	<div style="position:absolute;">
+					<button class="btn btn-success">score= <span id="score">0</span></button>
+				</div>	
+
+			
+		</body>
+</html>
